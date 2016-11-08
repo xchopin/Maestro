@@ -1,0 +1,57 @@
+/**
+* Maestro Framework
+* Fichier des tableaux
+* @author: Xavier CHOPIN
+*/
+
+    table {
+
+      width: 100%;
+      text-align: left;
+      overflow-x: auto;
+
+      @media #{$mq-tablette}{
+        display:block;
+      }
+
+      &.alternatif tr:nth-child(2n)  {
+          background-color: $gris;
+      }
+
+       &.bordure td, &.bordure th{
+          border: 1px solid black;
+      }
+
+      &.survol tr {
+          @include transition(0.3s);
+      }
+
+      &.survol tr:hover  {
+          background-color: $gris;
+      }
+
+      @media #{$mq-tablette} {
+            font-size: 90%;
+      }
+
+    }
+
+    tbody {
+      overflow-y: auto;   
+      overflow-x: hidden; 
+    }
+
+
+    th, td {
+        padding: 1.2em 50px;
+        vertical-align: middle;
+        display:table-cell;
+        border-radius: 1px;
+
+    }
+
+    th {
+        border-bottom: 1px solid black;
+        font-weight: bold;
+        text-align: left; /** Pour IE --' */
+    }

@@ -1,0 +1,319 @@
+/**
+* Maestro Framework
+* Fichier des composants
+* @author: Xavier CHOPIN
+*/
+
+
+.logo-header {
+	font-family: maestro;
+	font-size : 24px;
+	vertical-align:middle;
+	line-height: 75px;
+	margin-left: 2%;
+}
+
+header {
+	background-color:$couleurThemeFonce;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	z-index: 99;
+	border: 1px solid transparent;
+  box-shadow: 0px 0px 5px black;
+
+  & > nav {
+  	float: right;
+    padding: 20px;
+
+  }
+
+	ul {
+		display: inline-flex;
+		flex-direction: row;
+		float: right;
+		font-size : 14px;
+
+		& > li {
+			list-style: none;
+			align-items: flex-end;
+			white-space:nowrap;
+			border:none;
+			line-height:5px;
+			font-family: $police1,$police2;
+			font-weight: 500;
+
+			a {
+				text-transform: uppercase;
+				@include transition(0.3s);
+				&.disabled {
+					cursor: not-allowed;
+					color: darken($gris,40);
+				}
+
+				&.active { color: #26A69A; }
+
+				&:not(.disabled):not(.active):hover {
+					color: #26A69A;
+					-webkit-tap-highlight-color: transparent;
+					@include transition(0.3s);
+				}
+			}
+		}
+	}
+
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+  color: white;
+	background-color: darken($couleurThemeFonce,5);
+}
+
+a:before#menu-icon {
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+}
+
+
+
+@media #{$mq-iPhone}{
+
+	header { position: absolute; }
+
+	#menu-icon { display: inline-block; }
+
+	#menu-icon:before {
+	  content: "";
+	  position: absolute;
+	  margin-left:12px;
+	  top: 35px;
+	  width: 1em;
+	  height: 0.15em;
+	  background: white;
+	  box-shadow: 0 0.25em 0 0 white, 0 0.5em 0 0 white;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: fixed;
+		padding: 20px;
+		background:  $couleurTheme;
+		border: 5px solid  $couleurThemeFonce;
+		left: 0px;
+		top: 69px;
+		width: 90%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul { display: block; }
+}
+
+
+.boite {
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	border: 1px solid transparent;
+	border-color: #f0f0f0;
+  padding: 15px;
+	background-color: #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 7px 0 rgba(0, 0, 0, 0.12);
+	word-wrap: break-word;
+}
+
+.boite-center {
+	margin-left: 10%;
+	margin-right: 10%;
+
+	@media #{$mq-tablette} {
+		margin-left:  0;
+		margin-right: 0;
+	}
+}
+
+
+/** Alertes */
+
+[class*="alerte-"] {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	color: white;
+}
+
+.alerte-theme { background-color: $couleurThemeLeger; }
+
+.alerte-orange { background-color: $orangeLeger; }
+
+.alerte-rouge { background-color: $rougeLeger; }
+
+.alerte-vert { background-color: $vertLeger; }
+
+.page-header {
+	padding-top: 10px;
+	padding-bottom: 2vh;
+	vertical-align: middle;
+	margin-bottom: 25px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background-color: $grisLeger;
+}
+
+.jumbotron {
+	padding: 15px;
+	margin-bottom: 2vh;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background-color: $grisLeger;
+	overflow: hidden;
+}
+
+.jumbotron p.intro {
+	margin-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #cdcdcd;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+.jumbotron p { margin-top: 1em; }
+
+.jumbotron .btn{
+	background: #2196F3;
+	margin-top: 2em;
+	float:right;
+	padding: 1.2em 2.5em;
+	font-size: 1.2em;
+}
+
+.jumbotron .btn:hover{
+	background: #64B5F6;
+}
+
+ul.breadcrumb {
+    overflow: hidden;
+    width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+		    float: left;
+		    margin: 0 10px;
+				border-bottom: none;
+				padding: 0;
+
+				&:first-child a {
+				    border-top-left-radius: 2px;
+				    border-bottom-left-radius: 2px;
+				}
+
+				&:last-child a {
+				    border-top-right-radius: 2px;
+				    border-bottom-right-radius: 2px;
+				}
+
+				&:not(:first-child) > a::before {
+				    content: "";
+				    position: absolute;
+				    top: 50%;
+				    margin-top: -1.5em;
+				    border-width: 1.5em 0 1.5em 1em;
+				    border-style: solid;
+				    border-color: $couleurTheme transparent;
+				    left: -1em;
+				}
+
+				&:not(:first-child) > a:hover::before {
+				    border-color: $couleurThemeLeger transparent;
+						@include transition(0.3s);
+				}
+
+				&:not(:last-child) > a::after {
+				  content: "";
+				  position: absolute;
+				  top: 50%;
+				  margin-top: -1.5em;
+				  border-top: 1.5em solid transparent;
+				  border-bottom: 1.5em solid transparent;
+				  border-left: 1em solid $couleurTheme;
+				  right: -1em;
+				}
+
+				&:not(:last-child) > a:hover::after {
+				    border-left-color: $couleurThemeLeger;
+						@include transition(0.3s);
+				}
+		}
+
+		a {
+		  background: $couleurTheme;
+		  padding: .7em 1em;
+		  float: left;
+		  color: white;
+		  position: relative;
+		  text-decoration: none;
+          text-align: center;
+
+
+			&:hover {
+			    background: $couleurThemeLeger;
+					@extend %effetSurvol;
+					@include transition(0.3s);
+			}
+
+		}
+}
+
+ul.pagination {
+    display: block;
+		list-style-type: none;
+
+		li {
+			 border: none;
+			 display:inline-block;
+			 font-size: 1.2rem;
+			 padding: 0 10px;
+			 line-height: 30px;
+			 @include transition(0.3s);
+
+			 &.active {
+				 border-radius:2px;
+				 border: 1px solid $couleurTheme;
+    		 background-color: $couleurThemeLeger;
+				 @extend %effetSurvol;
+			 }
+
+			 &.chevron {
+				 font-size:110%;
+				 font-weight:bolder;
+			 }
+
+			 &:not(.active):not(.disabled):hover {
+				border-radius:2px;
+				background-color: $grisFlat;
+				@include transition(0.3s);
+
+			 }
+
+			 &:not(.active) {
+			  a { color: #444; }
+			 }
+
+			 &.disabled {
+				 cursor:not-allowed;
+			 }
+		}
+}
