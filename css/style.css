@@ -57,6 +57,7 @@ table {
 /**  1. Police d'écriture : */
 /**  2. Couleurs : */
 /** 3. Media Queries */
+/** 4. Variables autres */
 ul.breadcrumb a:hover, ul.pagination li.active, .btn:hover, .btn-simple:hover, .btn-simple:active, .btn-simple:focus, .btn-vert:hover, .btn-vert:active, .btn-vert:focus, .btn-rouge:hover, .btn-rouge:active, .btn-rouge:focus, .btn-orange:hover, .btn-orange:active, .btn-orange:focus, .btn-theme:hover, .btn-theme:active, .btn-theme:focus {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22), 0 2px 10px 0 rgba(0, 0, 0, 0.18); }
 
@@ -264,10 +265,11 @@ blockquote {
 
 header {
   background-color: #37474F;
+  top: 0;
+  z-index: 99;
   width: 100%;
   height: 75px;
   position: fixed;
-  z-index: 99;
   border: 1px solid transparent;
   box-shadow: 0px 0px 5px black; }
   header > nav {
@@ -295,7 +297,7 @@ header {
         header ul > li a.disabled {
           cursor: not-allowed;
           color: #778c9a; }
-        header ul > li a.active {
+        header ul > li a.active, header ul > li a:focus {
           color: #26A69A; }
         header ul > li a:not(.disabled):not(.active):hover {
           color: #26A69A;
@@ -1042,7 +1044,7 @@ th {
   -ms-animation: animation-nuages     50s linear infinite;
   -moz-animation: animation-nuages    50s linear infinite;
   -webkit-animation: animation-nuages 50s linear infinite;
-  padding-top: 17vh;
+  padding-top: 4%;
   padding-bottom: 17vh; }
 
 .preambule > p {
@@ -1066,6 +1068,9 @@ th {
 
 .theme-principal {
   color: #607D8B; }
+
+body {
+  padding-top: 75px; }
 
 html {
   font-family: "Roboto", sans-serif;

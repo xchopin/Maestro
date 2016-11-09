@@ -22,7 +22,7 @@
     -ms-animation: animation-nuages     50s linear infinite;
     -moz-animation: animation-nuages    50s linear infinite;
     -webkit-animation: animation-nuages 50s linear infinite;
-    padding-top:  17vh;
+    padding-top:  4%;
     padding-bottom: 17vh;
 }
 
@@ -62,6 +62,10 @@
     color: #607D8B;
 }
 
+
+body {
+  padding-top : $navbar-hauteur;
+}
 
 html {
     font-family: "Roboto", sans-serif;

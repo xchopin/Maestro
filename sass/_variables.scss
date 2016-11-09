@@ -33,3 +33,7 @@ $mq-desktop: "all and (max-width : " + $break-large + ")";
 // Petit bonus
 $mq-iPhone: "only screen and (max-width : 640px)";
 $mq-iPad: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+
+/** 4. Variables autres */
+
+$navbar-hauteur : 75px;

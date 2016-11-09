@@ -9,52 +9,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-
-<body>
-  <header>
-    <!--  <nav id="header" class="navbar">
-    <a class="menu-bigburger"> &#9776; </a>
-    <a class="logo-header" href="#debut">maestro</a>
-    <ul class="onglet-header">
-    <li><a href="">ACCUEIL</a></li>
-
-    <li><a href="">GITHUB</a></li>
-
-    <li><a href="">UNIV-LORRAINE</a></li>
-  </ul>
-</nav>-->
+<header>
 
 <a class="logo-header" href="#debut">maestro</a>
 <nav>
 
-  <div class="navbar">
-    <a href="#" id="menu-icon"></a>
+<div class="navbar">
+  <a href="#" id="menu-icon"></a>
 
-    <ul>
-      <li><a href="#" class="current">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+  <ul>
+    <li><a href="#intro">Accueil</a></li>
+    <li><a href="#typographie">Typographie</a></li>
+    <li><a href="#liste">Liste</a></li>
+    <li><a href="#tableau">Tableau</a></li>
+    <li><a href="#grille">Grille</a></li>
 
-    </ul>
-  </div>
+  </ul>
+</div>
 
 </nav>
 
 </header>
 
 
-
+<body>
 
 <div class="preambule" id="debut">
   <p>Voici <span class="maestro">maestro</span>, un framework CSS.</p>
-  <button class="btn btn-theme btn-large" id="decouvrir"> Découvrir <span class="maestro" style = "font-size:22px;">maestro</span> </button>
+  <a class="btn btn-theme btn-large" href="#intro"> Découvrir <span class="maestro" style = "font-size:22px;">maestro</span> </a>
 </div>
 
-<div class="boite boite-center">
+<div id="intro" class="boite boite-center">
   <h2 class="centre">Un framework pensé pour vous.</h2>
 
   <p class="grand centre">
@@ -63,7 +48,7 @@
     et responsive-design. Il répondra donc parfaitement à vos besoins d'intégrateur.
   </p>
 
-  <h2 class="theme-principal">Typographie</h2>
+  <h2 id="typographie" class="theme-principal">Typographie</h2>
   <hr>
   <h4 > Titres h1 ... h6 : </h4>
   <h1>h1. Titre h1  <small> sous-titre </small>   </h1>
@@ -135,7 +120,19 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
       <kbd>A</kbd><kbd>Z</kbd><kbd>E</kbd><kbd>R</kbd><kbd>T</kbd><kbd>Y</kbd><kbd>Ctrl</kbd>
       <code><span>&lt;kbd> A &lt;/kbd> &lt;kbd> Z &lt;/kbd> &lt;kbd> E &lt;/kbd></span></code>
 
-      <h2 class="theme-principal"> Les différentes listes</h2>
+      <h2 id="liste" class="theme-principal">Les conténeurs</h2>
+      <hr>
+
+      <div class="boite"> Une boite </div>
+
+      <code><span>&lt;div class="boite"> Une boite &lt;/div></code>
+
+      <div class="boite boite-center"> Une boite centrée </div>
+
+      <code><span>&lt;div class="boite boite-center"> Une boite centrée &lt;/div></code>
+
+
+      <h2 id="liste" class="theme-principal"> Les différentes listes</h2>
       <hr>
 
       <h4>Liste à puces :</h4>
@@ -219,7 +216,7 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
 
         <!--- TABLEAUX -->
 
-        <h2 id="#tableau" class="theme-principal"> Les tableaux </h2>
+        <h2 id="tableau" class="theme-principal"> Les tableaux </h2>
         <hr>
         <h4>Tableau normal : </h4>
         <table>
@@ -582,7 +579,7 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                           <li class="chevron"><a> > </a></li>
                         </ul>
 
-                        <h2 id="#grid" class="theme-principal">Système de grille : </h2>
+                        <h2 id="grille" class="theme-principal">Système de grille : </h2>
                         <hr>
 
                         <p class="details justifie">
