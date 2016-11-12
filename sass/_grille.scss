@@ -1,21 +1,11 @@
-/**
-* Maestro Framework
-* Fichier des grilles
-* @author: Xavier CHOPIN
-*/
-
-.outline, .outline *{
-    outline: 1px solid #BCAAA4;
-}
-
-
+@import 'presets/grille';
 [class*='grille'] {
   margin-bottom: 1em;
   .row {
    [class*='span-'] {
 
        box-sizing: border-box;
-       background-color: #EFEBE9;
+      
 
        &:first-child {margin-left: 0;}
 
@@ -35,117 +25,22 @@
 
 }
 
-@mixin grilleSeeder($nbColonnes,$largeurGoutiere) {
-  /** Variables */
-  $largeurGoutiere : $largeurGoutiere ;
-  $marge : ($largeurGoutiere * ($nbColonnes - 1));
-  $largeur1 : (100 - $marge) / $nbColonnes;
-  $largeur2 : 100% / $nbColonnes;
-
-  /** Styles */
-  width : 100%;
-  margin-bottom:2em;
-  display:inline-block;
-
-  .row {
-    [class*="span"]{
-      box-sizing: border-box;
-      background-color: #EFEBE9;
-      float: left;
-      min-height: 1px;
-      padding: 2%;
-      margin-left: 2%;
-    }
-    @for $i from 1 through $nbColonnes {
-      $remove : (($nbColonnes / $i) - 1) * $largeurGoutiere;
-      $width : ((100 - $remove) / $nbColonnes * $i);
-
-      .span-#{$i} { width: $width ; }
-      .offset-#{$i} {
-          @if $i < $nbColonnes {
-                margin-left: $width !important ;
-                &:first-child { margin-left: $width + $largeurGoutiere !important; }
-          }
-      }
-
-      @media #{$mq-tablette} {
-        @if ($i == 1) {
-         .span-#{$i}{ width: 50%;  margin-left: 0; }
-        }@else{
-          .span-#{$i}{ width: 100%;  margin-left: 0; }
-        }
-      }
-    }
-
-    @media all and (max-width:1000px) {
-      [class*='offset-'] {
-        margin-left: 0 !important;
-        &:first-child { margin-left: 0 !important;}
-      }
-    }
-  }
+.outline, .outline *{
+    @extend %encadre;
 }
-
 
 .grille {
-  @include grilleSeeder(8,2%);
-}
-
-.grille-mixin {
-  @include grilleSeeder(12,2%);
+    @include generateurGrilleFloat(8,2%);
 }
 
 .grille-flex {
-  margin-bottom: 1em;
-  .row {
-      display: -ms-flexbox;
-      display: -moz-flex;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      flex-wrap: wrap;
+    @include generateurGrilleFlex(8,2%);
+}
 
+.grille-mixin {
+    @include generateurGrilleFloat(12,2%);
+}
 
-
-      .span-flex {
-        padding: 2%;
-        flex-grow: 1;
-        flex:1;
-        margin-left: 2%;
-
-        &:first-child { margin-left: 0; }
-        background-color: transparent;
-        min-width: 10.75%;
-
-      }
-
-
-      .flex-premier {
-        order:-1;
-        margin-right:2%;
-        margin-left:0;
-      }
-
-      .flex-dernier { order: 1; }
-
-
-      .offset-1{ margin-left: 14.75%; &:first-child { margin-left: 12.75%; } }
-      .offset-2{ margin-left: 27.5%;  &:first-child { margin-left: 25.5%; } }
-      .offset-3{ margin-left: 40.25%; &:first-child { margin-left: 38.25%; } }
-      .offset-4{ margin-left: 53%;    &:first-child { margin-left: 51%; } }
-      .offset-5{ margin-left: 65.75%; &:first-child { margin-left: 63.75%; }  }
-      .offset-6{ margin-left: 78.5%;  &:first-child { margin-left: 76.5%; } }
-      .offset-7{ margin-left: 91.25%; &:first-child { margin-left: 89.25%; } }
-
-
-      @media all and (max-width:1000px) {
-          .span-flex{ min-width: 100%;  margin-left: 0; }
-
-          [class*='offset-'] {
-              margin-left: 0;
-              &:first-child { margin-left: 0;}
-          }
-      }
-  }
+.grille-mixin2 {
+    @include generateurGrilleFlex(5,20%);
 }

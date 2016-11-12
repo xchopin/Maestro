@@ -1,42 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head lang="fr">
+<html lang="FR-fr">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Framework</title>
+  <title>Maestro Framework</title>
   <meta name="description" content="Maestro, un framework made in France.">
   <meta name="author" content="Xavier Chopin | bonjour@xavierchop.in">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <header>
-
-<a class="logo-header" href="#debut">maestro</a>
-<nav>
-
-<div class="navbar">
-  <a href="#" id="menu-icon"></a>
-
-  <ul>
-    <li><a href="#intro">Accueil</a></li>
-    <li><a href="#typographie">Typographie</a></li>
-    <li><a href="#liste">Liste</a></li>
-    <li><a href="#tableau">Tableau</a></li>
-    <li><a href="#grille">Grille</a></li>
-
-  </ul>
-</div>
-
-</nav>
-
+    <a class="logo-header" href="#debut">maestro</a>
+    <nav>
+            <a href="#" class="menu-icon"></a>
+            <ul>
+                <li><a href="#intro">Accueil</a></li>
+                <li><a href="#typographie">Typographie</a></li>
+                <li><a href="#liste">Liste</a></li>
+                <li><a href="#tableau">Tableau</a></li>
+                <li><a href="#grille">Grille</a></li>
+            </ul>
+    </nav>
 </header>
 
 
-<body>
-
 <div class="preambule" id="debut">
   <p>Voici <span class="maestro">maestro</span>, un framework CSS.</p>
-  <a class="btn btn-theme btn-large" href="#intro"> Découvrir <span class="maestro" style = "font-size:22px;">maestro</span> </a>
+  <a class="btn btn-theme btn-large"> Découvrir <span class="maestro" style = "font-size:22px;">maestro</span> </a>
 </div>
 
 <div id="intro" class="boite boite-center">
@@ -94,6 +84,10 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
     de logiciel. </p><span class="auteur">Steve Jobs</span>
   </blockquote>
 
+  <code><span>&lt;blockquote></span>
+  <span> &lt;p>La France pourrait dominer l'Europe dans le logiciel...&lt;/p> &lt;span class="auteur">Steve Jobs&lt;/span></span>
+  <span>&lt;/blockquote></span></code>
+
   <h4>Texte préformaté:</h4>
   <pre>
     LOREM LOREM LOREL CANS L RLEPZEZSQM%FEZFLZ¨
@@ -120,16 +114,16 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
       <kbd>A</kbd><kbd>Z</kbd><kbd>E</kbd><kbd>R</kbd><kbd>T</kbd><kbd>Y</kbd><kbd>Ctrl</kbd>
       <code><span>&lt;kbd> A &lt;/kbd> &lt;kbd> Z &lt;/kbd> &lt;kbd> E &lt;/kbd></span></code>
 
-      <h2 id="liste" class="theme-principal">Les conténeurs</h2>
+      <h2 id="conteneur" class="theme-principal">Les conténeurs</h2>
       <hr>
 
       <div class="boite"> Une boite </div>
 
-      <code><span>&lt;div class="boite"> Une boite &lt;/div></code>
+      <code><span>&lt;div class="boite"> Une boite &lt;/div></span></code>
 
       <div class="boite boite-center"> Une boite centrée </div>
 
-      <code><span>&lt;div class="boite boite-center"> Une boite centrée &lt;/div></code>
+      <code><span>&lt;div class="boite boite-center"> Une boite centrée &lt;/div></span></code>
 
 
       <h2 id="liste" class="theme-principal"> Les différentes listes</h2>
@@ -470,28 +464,28 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
 
 
                 <h4>Un bouton simple sans effet Ripple : </h4>
-                <button class="btn btn-simple"> Bouton </button>
-                <code><span>&lt;button class="btn btn-simple"> Bouton &lt;/button></span></code>
+                <button class="btn-simple"> Bouton </button>
+                <code><span>&lt;button class="btn-simple"> Bouton &lt;/button></span></code>
 
                 <h4>Un peu de couleurs: </h4>
-                <button class="btn btn-vert"> Vert </button>
-                <button class="btn btn-rouge"> Rouge </button>
-                <button class="btn btn-orange"> Orange </button>
+                <button class="btn-vert"> Vert </button>
+                <button class="btn-rouge"> Rouge </button>
+                <button class="btn-orange"> Orange </button>
 
-                <code><span>&lt;button class="btn btn-vert">Vert &lt;/button></span>
-                  <span>&lt;button class="btn btn-rouge">Rouge &lt;/button></span>
-                  <span>&lt;button class="btn btn-orange">Orange &lt;/button></span></code>
+                <code><span>&lt;button class="btn-vert"> Vert &lt;/button></span>
+                      <span>&lt;button class="btn-rouge"> Rouge &lt;/button></span>
+                      <span>&lt;button class="btn-orange"> Orange &lt;/button></span></code>
 
                   <h4>Bouton de type flat: </h4>
-                  <button class="btn btn-flat"> Flat </button>
-                  <code><span>&lt;button class="btn btn-flat "> Flat &lt;/button></span></code>
+                  <button class="btn-flat"> Flat </button>
+                  <code><span>&lt;button class="btn-flat"> Flat &lt;/button></span></code>
 
                   <h4>Bouton extra large (100% du conteneur): </h4>
-                  <button class="btn btn-orange btn-extra-large">  Large et orange </button>
-                  <code><span>&lt;button class="btn btn-orange btn-extra-large "> Large et orange &lt;/button></span></code>
+                  <button class="btn-orange btn-extra-large">  Large et orange </button>
+                  <code><span>&lt;button class="btn-orange btn-extra-large "> Large et orange &lt;/button></span></code>
 
                   <h4>Bouton de type Fancy: </h4>
-                  <button class="btn btn-fancy"> UN BOUTON FANCY 3D </button>
+                  <button class="btn-fancy"> UN BOUTON FANCY 3D </button>
                   <code><span>&lt;button class="btn btn-fancy "> &lt;/button></span></code>
 
                   <h4>Bouton associé à l'élement a: </h4>
@@ -512,7 +506,7 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                   <code><span>&lt;div class="alerte alerte-rouge"> Message d'alerte danger. &lt;/div></span></code>
 
                   <div class="alerte alerte-vert"> Message d'alerte succès. </div>
-                  <code><span>&lt;div class="alerte alerte-vert"> Message d'alerte succès.</span> &lt;/div></code>
+                  <code><span>&lt;div class="alerte alerte-vert"> Message d'alerte succès. &lt;/div></span> </code>
 
                   <!--- HEADER ET JUMBOTRON -->
                   <h2 id="#headerjumbo" class="theme-principal"> Header et Jumbotron</h2>
@@ -537,17 +531,61 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                       <span>    &lt;button class="btn"> Lire plus &lt;/button></span>
                       <span>&lt;/div></span></code>
 
-                      <h2 id="#navbar" class="theme-principal"> Navbar </h2>
-
-                      <nav class="navbar">
-                        <a class="menu-bigburger"> &#9776; </a>
-                        <a class="logo-header">titre</a>
-                        <ul>
-                          <li><a class="active" href="">Onglet actif</a></li>
-                          <li><a class="disabled">Onglet désactivé</a></li>
-                          <li><a href="">Onglet normal</a></li>
-                        </ul>
+                    <h2 id="#navbar" class="theme-principal"> Navbar </h2>
+                     <div class="navbar-relative">
+                      <a class="logo-header">logo</a>
+                      <nav>
+                              <a href="#" class="menu-icon"></a>
+                              <ul>
+                                  <li><a class="active">Actif</a></li>
+                                  <li><a class="disabled">Désactivé</a></li>
+                                  <li><a>Normal</a></li>
+                              </ul>
                       </nav>
+                    </div>
+
+                    <code><span>&lt;header></span>
+                            <span>      &lt;a class="logo-header">logo&lt;/a></span>
+                            <span>      &lt;nav></span>
+                            <span>         &lt;a href="#" class="menu-icon">&lt;/a></span>
+                            <span>         &lt;ul></span>
+                            <span>             &lt;li>&lt;a class="active">Actif&lt;/a>&lt;/li></span>
+                            <span>             &lt;li>&lt;a class="disabled">Désactivé&lt;/a>&lt;/li></span>
+                            <span>             &lt;li>&lt;a>Normal&lt;/a>&lt;/li></span>
+                            <span>         &lt;/ul></span>
+                            <span>      &lt;/nav></span>
+                            <span>&lt;/header></span></code>
+
+
+                    <h4>Un peu de customisation grâce aux mixin: </h4>
+                    <div class="navbar-rouge">
+                        <a class="logo-header">logo</a>
+                        <nav>
+                                <a href="#" class="menu-icon"></a>
+                                <ul>
+                                    <li><a class="active">Actif</a></li>
+                                    <li><a class="disabled">Désactivé</a></li>
+                                    <li><a>Normal</a></li>
+                                </ul>
+                        </nav>
+                    </div>
+
+                    <code><span>&lt;div class="navbar-rouge"></span>
+                            <span>      &lt;a class="logo-header">logo&lt;/a></span>
+                            <span>      &lt;nav></span>
+                            <span>          &lt;a href="#" class="menu-icon">&lt;/a></span>
+                            <span>          &lt;ul></span>
+                            <span>              &lt;li>&lt;a class="active">Actif&lt;/a>&lt;/li></span>
+                            <span>              &lt;li>&lt;a class="disabled">Désactivé&lt;/a>&lt;/li></span>
+                            <span>              &lt;li>&lt;a>Normal&lt;/a>&lt;/li></span>
+                            <span>          &lt;/ul></span>
+                            <span>      &lt;/nav></span>
+                            <span>&lt;/div></span></code>
+
+                    <code> <span>.navbar-rouge { </span>
+                           <span>  @include navbar($rouge,$navbar-hauteur,false,$orange); </span>
+                           <span>  <a style ="color:#7a7a7a">// Couleur du background, hauteur de la barre, Fixed: true/Relative: False, couleur lien actif</a> </span>
+                           <span>}</span></code>
 
                       <!--- BREADCRUMB -->
 
@@ -570,7 +608,7 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                         <h2 id="#pagination" class="theme-principal"> Pagination </h2>
                         <hr>
                         <ul class="pagination">
-                          <li class="disabled chevron"><a><</a></li>
+                          <li class="disabled chevron"><a> &lt;  </a></li>
                           <li class="active"><a>1</a></li>
                           <li><a>2</a></li>
                           <li><a>3</a></li>
@@ -579,21 +617,30 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                           <li class="chevron"><a> > </a></li>
                         </ul>
 
+                        <code><span>&lt;ul class="pagination"></span>
+                        <span>  &lt;li class="disabled chevron">&lt;a> &lt; &lt;/a>&lt;/li></span>
+                        <span>  &lt;li class="active">&lt;a>1&lt;/a>&lt;/li></span>
+                        <span>  &lt;li>&lt;a>2&lt;/a>&lt;/li></span>
+                        <span>  &lt;li>&lt;a>3&lt;/a>&lt;/li></span>
+                        <span>  &lt;li>&lt;a>4&lt;/a>&lt;/li></span>
+                        <span>  &lt;li>&lt;a>5&lt;/a>&lt;/li></span>
+                        <span>  &lt;li class="chevron">&lt;a> > &lt;/a>&lt;/li></span>
+                        <span>&lt;/ul></span></code>
+
                         <h2 id="grille" class="theme-principal">Système de grille : </h2>
                         <hr>
 
                         <p class="details justifie">
-                          <span class="maestro">Maestro</span> inclut un performant système de grille
-                          vous permettant de facilement disposer vos éléments. <br>Cette grille est structurée
-                          en 8 colonnes, en 2 versions : float et flex. Vous pouvez également
-                          utiliser les mixins présents dans nos fichiers Sass pour créer de nouvelles
-                          grilles.
+                          <span class="maestro">Maestro</span> inclut un système de grille
+                          vous permettant de disposer facilement vos éléments. <br>Par défaut, cette grille est structurée
+                          en 8 colonnes et en 2 versions : float et flex. Vous pouvez également
+                          utiliser les mixins présents dans nos fichiers Sass afin de les customiser.
                         </p>
 
                         <h4>Grille version float : </h4>
 
-                        <div class="grille outline">
-                          <div id="demo" class="row">
+                        <div class="grille outline demo">
+                          <div class="row">
                             <div class="span-1"><p>.span-1</p></div>
                             <div class="span-1"><p>.span-1</p></div>
                             <div class="span-1"><p>.span-1</p></div>
@@ -603,34 +650,34 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                             <div class="span-1"><p>.span-1</p></div>
                             <div class="span-1"><p>.span-1</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-2"><p>.span-2</p></div>
                             <div class="span-2"><p>.span-2</p></div>
                             <div class="span-2"><p>.span-2</p></div>
                             <div class="span-2"><p>.span-2</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-3"><p>.span-3</p></div>
                             <div class="span-3"><p>.span-3</p></div>
                             <div class="span-2"><p>.span-2</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-4"><p>.span-4</p></div>
                             <div class="span-4"><p>.span-4</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-5"><p>.span-5</p></div>
                             <div class="span-3"><p>.span-3</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-6"><p>.span-6</p></div>
                             <div class="span-2"><p>.span-2</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-7"><p>.span-7</p></div>
                             <div class="span-1"><p>.span-1</p></div>
                           </div>
-                          <div id="demo" class="row">
+                          <div class="row">
                             <div class="span-8"><p>.span-8</p></div>
                           </div>
                         </div>
@@ -671,34 +718,34 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
 
                           <h4>Fonctionnement des offset : </h4>
 
-                          <div class="grille outline">
+                          <div class="grille outline demo">
 
-                            <div id="demo" class="row">
+                            <div class="row">
                               <div class="offset-1 span-1"><p>.span-1</p></div>
                               <div class="offset-1 span-1"><p>.span-1</p></div>
                               <div class="offset-1 span-1"><p>.span-1</p></div>
                               <div class="offset-1 span-1"><p>.span-1</p></div>
                             </div>
 
-                            <div id="demo" class="row">
+                            <div class="row">
                               <div class="offset-1 span-7"><p>.span-7</p></div>
                             </div>
-                            <div id="demo" class="row">
+                            <div  class="row">
                               <div class="offset-2 span-6"><p>.span-6</p></div>
                             </div>
-                            <div id="demo" class="row">
+                            <div  class="row">
                               <div class="offset-3 span-5"><p>.span-5</p></div>
                             </div>
-                            <div id="demo" class="row">
+                            <div  class="row">
                               <div class="offset-4 span-4"><p>.span-4</p></div>
                             </div>
-                            <div id="demo" class="row">
+                            <div  class="row">
                               <div class="offset-5 span-3"><p>.span-3</p></div>
                             </div>
-                            <div id="demo" class="row">
+                            <div  class="row">
                               <div class="offset-6 span-2"><p>.span-2</p></div>
                             </div>
-                            <div id="demo" class="row">
+                            <div  class="row">
                               <div class="offset-7 span-1"><p>.span-1</p></div>
                             </div>
                           </div>
@@ -723,8 +770,8 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
 
                             <h4>Fonctionnement des grilles flex :</h4>
 
-                            <div class="grille-flex outline">
-                              <div id="demo" class="row">
+                            <div class="grille-flex outline demo">
+                              <div  class="row">
                                 <div class="span-flex"><p>1 / 4</p></div>
                                 <div class="span-flex"><p>2 / 8</p></div>
                                 <div class="span-flex"><p>3 / 8</p></div>
@@ -734,17 +781,17 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                                 <div class="span-flex"><p>7 / 8</p></div>
                                 <div class="span-flex"><p>8 / 8</p></div>
                               </div>
-                              <div id="demo" class="row">
+                              <div  class="row">
                                 <div class="span-flex"><p>1 / 4</p></div>
                                 <div class="span-flex"><p>2 / 4</p></div>
                                 <div class="span-flex"><p>3 / 4</p></div>
                                 <div class="span-flex"><p>4 / 4</p></div>
                               </div>
-                              <div id="demo" class="row">
+                              <div  class="row">
                                 <div class="span-flex"><p>1 / 2</p></div>
                                 <div class="span-flex"><p>2 / 2</p></div>
                               </div>
-                              <div id="demo" class="row">
+                              <div  class="row">
                                 <div class="span-flex"><p>1 / 1</p></div>
 
                               </div>
@@ -771,21 +818,21 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                               <span>&lt;/div></span></code>
 
                               <h4>Fonctionnement des offset avec flex : </h4>
-                              <div class="grille-flex outline">
-                                <div id="demo" class="row">
-                                  <div id="demo" class="offset-1 span-flex"><p>.offset-1 span-flex</p></div>
-                                  <div id="demo" class="offset-1 span-flex"><p>.offset-1 span-flex</p></div>
+                              <div class="grille-flex outline demo">
+                                <div  class="row">
+                                  <div  class="offset-1 span-flex"><p>.offset-1 span-flex</p></div>
+                                  <div  class="offset-1 span-flex"><p>.offset-1 span-flex</p></div>
                                 </div>
-                                <div id="demo" class="row">
-                                  <div id="demo" class="offset-4 span-flex"><p>.offset-4 span-flex</p></div>
+                                <div  class="row">
+                                  <div  class="offset-4 span-flex"><p>.offset-4 span-flex</p></div>
                                 </div>
                               </div>
 
 
                               <h4>Ordonnement :</h4>
 
-                              <div class="grille-flex">
-                                <div id="demo" class="row">
+                              <div class="grille-flex demo ">
+                                <div  class="row">
                                   <div class="span-flex">
                                     premier élément mais non ordonnée.
                                   </div>
@@ -811,33 +858,61 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                                 <span>        &lt;/div></span>
                                 <span>    &lt;/div></span>
                                 <span>&lt;/div></span></code>
-                                <h4> Personalisation des grilles </h4>
-                                <div class="grille-mixin outline">
-                                  <div id="demo" class="row">
+
+                                <h4> Personalisation des grilles float :  </h4>
+                                <div class="grille-mixin outline demo">
+                                  <div  class="row">
                                     <div class="span-12"><p>.span-12</p></div>
                                   </div>
-                                  <div id="demo" class="row">
+                                  <div  class="row">
                                     <div class="offset-10 span-2"><p>.span-2</p></div>
                                   </div>
                                 </div>
 
                                 <h6> Scss : </h6>
                                 <code><span>.grille-perso { </span>
-                                  <span>  @include grilleSeeder(12,2%); <e style ="color:#7a7a7a">//Nombre de colonnes et largeur des goutières</e></span>
+                                  <span>  @include generateurGrilleFloat(12,2%); <a style ="color:#7a7a7a">//Nombre de colonnes et largeur des goutières</a></span>
                                   <span>}</span></code>
 
                                   <h6> HTML : </h6>
                                   <code><span>&lt;div class="grille-perso"> </span>
                                     <span>    &lt;div class="row"></span>
-                                    <span>        &lt;div class="span-12"> &lt;p>.span-12&lt;/p> &lt/div></span>
-                                    <span>        &lt;div class="offset-10 span-2"> &lt;p>.span-2&lt;/p> &lt/div></span>
+                                    <span>        &lt;div class="span-12"> &lt;p>.span-12&lt;/p> &lt;/div></span>
+                                    <span>        &lt;div class="offset-10 span-2"> &lt;p>.span-2&lt;/p> &lt;/div></span>
                                     <span>    &lt;/div></span>
                                     <span>&lt;/div></span></code>
 
 
-                                  </body>
+                                <h4> Personalisation des grilles flex :  </h4>
+                                <div class="grille-mixin2 outline demo">
+                                  <div  class="row">
+                                    <div class="span-flex"><p>1/2</p></div>
+                                    <div class="span-flex"><p>2/2</p></div>
+                                  </div>
+                                  <div  class="row">
+                                    <div class="offset-3 span-flex"><p>.offset-3</p></div>
+                                  </div>
+                                </div>
 
+                                <h6> Scss : </h6>
+                                <code><span>.grille-perso { </span>
+                                  <span>  @include generateurGrilleFlex(5,20%);; <a style ="color:#7a7a7a">//Nombre de colonnes et largeur des goutières</a></span>
+                                  <span>}</span></code>
 
+                                  <h6> HTML : </h6>
+                                  <code><span>&lt;div class="grille-perso"> </span>
+                                    <span>    &lt;div class="row"></span>
+                                    <span>        &lt;div class="span-flex"> &lt;p>1/2&lt;/p> &lt;/div> </span>
+                                    <span>        &lt;div class="span-flex"> &lt;p>2/2&lt;/p> &lt;/div> </span>
+                                    <span>    &lt;/div></span>
+                                    <span>    &lt;div class="row"></span>
+                                    <span>        &lt;div class="offset-3 span-flex"> &lt;p>.offset-3&lt;/p> &lt;/div> </span>
+                                    <span>    &lt;/div></span>
+                                    <span>&lt;/div></span></code>
+                </div>
 
-
-      </html>
+                <footer>
+                    © 2016 Maestro Framework - Xavier CHOPIN
+                </footer>
+        </body>
+</html>
