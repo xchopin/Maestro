@@ -1,17 +1,4 @@
 @import 'presets/grille';
-[class*='grille'] {
-  margin-bottom: 1em;
-  .row {
-   
-
-   &:before , &:after {
-       content: "";
-       display: table ;
-       clear:both;
-   }
- }
-
-}
 
 .outline, .outline *{
     @extend %encadre;
