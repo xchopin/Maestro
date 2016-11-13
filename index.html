@@ -19,6 +19,7 @@
                 <li><a href="#liste">Liste</a></li>
                 <li><a href="#tableau">Tableau</a></li>
                 <li><a href="#grille">Grille</a></li>
+                <li><a href="#input">Input</a></li>
             </ul>
     </nav>
 </header>
@@ -26,18 +27,32 @@
 
 <div class="preambule" id="debut">
   <p>Voici <span class="maestro">maestro</span>, un framework CSS.</p>
-  <a class="btn btn-theme btn-large"> Découvrir <span class="maestro" style = "font-size:22px;">maestro</span> </a>
+  <a class="btn btn-theme btn-large"> Découvrir <span class="maestro" style="font-size:22px;">maestro</span> </a>
 </div>
 
 <div id="intro" class="boite boite-center">
   <h2 class="centre">Un framework pensé pour vous.</h2>
 
-  <p class="grand centre">
+  <p id="presentation" class="grand centre">
     <span class="maestro">maestro</span> est un framework français crée pour
-    simplifier vos projets. Aucune dépendance de JavaScript, il est moderne
+    simplifier vos projets. <br> Aucune dépendance de JavaScript, il est moderne
     et responsive-design. Il répondra donc parfaitement à vos besoins d'intégrateur.
-  </p>
+</p>
 
+  <div class="grille-flex">
+      <div class="row">
+          <div class="span-flex span-ligne-3">
+              <img class="centrer img-50" alt="html" src="ressources/html.png"/>
+          </div>
+          <div class="span-flex span-ligne-3">
+              <img class="centrer img-50" alt="css" src="ressources/css.png"/>
+          </div>
+          <div class="span-flex span-ligne-3">
+              <img class="centrer img-50" alt="sass" src="ressources/sass.png"/>
+          </div>
+      </div>
+ </div>
+ <br>
   <h2 id="typographie" class="theme-principal">Typographie</h2>
   <hr>
   <h4 > Titres h1 ... h6 : </h4>
@@ -489,8 +504,8 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                   <code><span>&lt;button class="btn btn-fancy "> &lt;/button></span></code>
 
                   <h4>Bouton associé à l'élement a: </h4>
-                  <a href="http://docker.com" class="btn"> Lien vers l'outil français docker </a>
-                  <code><span>&lt;a href="http://docker.com" class="btn"> Lien vers l'outil français docker &lt;/a></span></code>
+                  <a href="http://docker.com" class="btn"> Un logiciel français </a>
+                  <code><span>&lt;a href="http://docker.com" class="btn"> Un logiciel français &lt;/a></span></code>
 
                   <!--- ALERTES -->
                   <h2 id="#alerte" class="theme-principal"> Les messages d'alerte</h2>
@@ -793,7 +808,6 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                               </div>
                               <div  class="row">
                                 <div class="span-flex"><p>1 / 1</p></div>
-
                               </div>
                             </div>
                             <code><span>&lt;div class="grille-flex outline"></span>
@@ -859,7 +873,28 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                                 <span>    &lt;/div></span>
                                 <span>&lt;/div></span></code>
 
-                                <h4> Personalisation des grilles float :  </h4>
+
+                            <h6>
+                              Dans cette grille flex, nous avons également rajouté une spécificité: vous pouvez disposer
+                              des éléments sur une seule ligne en version mobile.
+                           </h6>
+
+                           <div class="grille-flex outline demo">
+                             <div  class="row">
+                               <div class="span-flex span-ligne-3"><p>Regarde nous en mobile :-)</p></div>
+                               <div class="span-flex span-ligne-3"><p>Regarde nous en mobile :-)</p></div>
+                               <div class="span-flex span-ligne-3"><p>Regarde nous en mobile :-)</p></div>
+                             </div>
+                           </div>
+                           <code><span>&lt;div class="grille-flex outline demo"></span>
+                           <span>  &lt;div  class="row"></span>
+                           <span>    &lt;div class="span-flex span-ligne-3">&lt;p>Regarde nous en mobile :-)&lt;/p>&lt;/div></span>
+                           <span>    &lt;div class="span-flex span-ligne-3">&lt;p>Regarde nous en mobile :-)&lt;/p>&lt;/div></span>
+                           <span>    &lt;div class="span-flex span-ligne-3">&lt;p>Regarde nous en mobile :-)&lt;/p>&lt;/div></span>
+                           <span>  &lt;/div></span>
+                           <span>&lt;/div></span></code>
+
+                                <h4> Personnalisation des grilles float :  </h4>
                                 <div class="grille-mixin outline demo">
                                   <div  class="row">
                                     <div class="span-12"><p>.span-12</p></div>
@@ -883,7 +918,7 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                                     <span>&lt;/div></span></code>
 
 
-                                <h4> Personalisation des grilles flex :  </h4>
+                                <h4> Personnalisation des grilles flex :  </h4>
                                 <div class="grille-mixin2 outline demo">
                                   <div  class="row">
                                     <div class="span-flex"><p>1/2</p></div>
@@ -909,7 +944,97 @@ La balise ABBR:  <abbr title="United States of America">USA</abbr>
                                     <span>        &lt;div class="offset-3 span-flex"> &lt;p>.offset-3&lt;/p> &lt;/div> </span>
                                     <span>    &lt;/div></span>
                                     <span>&lt;/div></span></code>
-                </div>
+
+                                <h2 class="theme-principal" id="input"> Inputs :  </h2>
+
+                                <h4>Simple : </h4>
+                                <div class="grille-flex">
+                                    <div class="row">
+                                        <div class="span-flex span-ligne-3 ">
+                                              <input class="simple centrer" placeholder="Titre" type="text" required>
+                                        </div>
+                                        <div class="span-flex span-ligne-3">
+                                            <input class="simple-rouge centrer" placeholder="Titre" type="text" required>
+                                        </div>
+
+                                        <div class="span-flex span-ligne-3 ">
+                                            <input class="simple-vert centrer" placeholder="Titre" type="text" required>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <code><span>&lt;input class="simple" placeholder="Titre" type="text"></span>
+                                <span> </span>
+                                <span>&lt;input class="simple-rouge" placeholder="Titre" type="text"></span>
+                                <span> </span>
+                                <span>&lt;input class="simple-vert" placeholder="Titre" type="text"></span></code>
+
+                                <h5> Customisation grâce au mixin : </h5>
+                                <h6> Scss : </h6>
+                                <code><span>input.simple-couleur {</span>
+                                    <span> @include input-simple($couleur);</span>
+                                    <span>}</span></code>
+
+                                <h6> HTML : </h6>
+                                <code><span>&lt;input class="simple-couleur"></span></code>
+
+                                <h4>Material Style : </h4>
+                                <div class="grille-flex">
+                                    <div class="row">
+                                        <div class="span-flex span-ligne-3">
+                                            <div class="formulaire">
+                                              <input type="text" required>
+                                              <span class="barre"></span>
+                                              <label>Titre</label>
+                                            </div>
+                                        </div>
+                                        <div class="span-flex span-ligne-3">
+                                            <div class="formulaire-rouge">
+                                              <input type="text" required>
+                                              <span class="barre"></span>
+                                              <label>Titre</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="span-flex span-ligne-3">
+                                            <div class="formulaire-vert">
+                                              <input type="text" required>
+                                              <span class="barre"></span>
+                                              <label>Titre</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <code><span>&lt;div class="formulaire"></span>
+                                <span>      &lt;input type="text" required></span>
+                                <span>      &lt;span class="barre">&lt;/span></span>
+                                <span>      &lt;label>Titre&lt;/label></span>
+                                <span>&lt;/div></span>
+                                <span> </span>
+                                <span>&lt;div class="formulaire-vert"></span>
+                                <span>   ...</span>
+                                <span>&lt;/div></span>
+                                <span> </span>
+                                <span>&lt;div class="formulaire-rouge"></span>
+                                <span>   ...</span>
+                                <span>&lt;/div></span></code>
+
+                                <h5> Customisation grâce au mixin : </h5>
+                                <h6> Scss : </h6>
+                                <code><span>.formulaire-couleur {</span>
+                                    <span> @include formulaire($couleur);</span>
+                                    <span>}</span></code>
+
+                                <h6> HTML : </h6>
+                                <code><span>&lt;div class="formulaire-couleur"></span>
+                                <span>   ...</span>
+                                <span>&lt;/div></span></code>
+
+
+                            </div>
 
                 <footer>
                     © 2016 Maestro Framework - Xavier CHOPIN

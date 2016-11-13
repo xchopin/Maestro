@@ -6,6 +6,8 @@
 @import 'bouton';
 @import 'tableau';
 @import 'grille';
+@import 'image';
+@import 'input';
 @import 'demo';
 
 
@@ -37,7 +39,6 @@ pre {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7+ */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
-
 }
 
 
@@ -132,6 +133,7 @@ footer {
     background-color: darken($grisFlat,20);
     font-family: $police1;
     color:white;
+
 
     @media #{$mq-telephone} {
         padding-left:5%;

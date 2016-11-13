@@ -25,6 +25,8 @@ header { @include navbar($couleurThemeFonce,$navbar-hauteur,true,#26A69A); }
 
 .jumbotron { @extend %jumbotron; }
 
+.centrer { @extend %centrer; }
+
 ul.breadcrumb {
     overflow: hidden;
     width: 100%;

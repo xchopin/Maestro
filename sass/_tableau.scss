@@ -11,8 +11,9 @@
       overflow-x: auto;
 
       @media #{$mq-tablette}{
-        display:block;
+            display:block;
       }
+
 
       &.alternatif tr:nth-child(2n)  {
           background-color: $gris;
@@ -37,8 +38,8 @@
     }
 
     tbody {
-      overflow-y: auto;   
-      overflow-x: hidden; 
+      overflow-y: auto;
+      overflow-x: hidden;
     }
 
 

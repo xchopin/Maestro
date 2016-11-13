@@ -26,7 +26,8 @@
     outline: 0;
     text-transform: uppercase;
     vertical-align: middle;
-
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &:hover, &:active, &:focus {
         background-color: $couleurBackgroundHover;
         @extend %effetSurvol;
@@ -108,7 +109,7 @@
     font-size: $fontSize;
 
     @media #{$mq-telephone}{
-        font-size:100%;
+        font-size: 100%;
     }
 }
 

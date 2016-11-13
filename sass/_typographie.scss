@@ -55,13 +55,16 @@ h6 > small { font-size: 80%; color: $couleurSousTitre;  }
     @extend %sub;
 }
 
-.gauche {    @extend %gauche ;}
-.droite {    @extend %droite ;}
-.centre {    @extend %centre ; }
-.justifie{   @extend %justifie ; }
+.gauche {  @extend %gauche ;}
+.droite {  @extend %droite ;}
+.centre {  @extend %centre ; }
+.justifie { @extend %justifie ; }
 .majuscule { @extend %majuscule ; }
 .minuscule { @extend %minuscule ; }
 .gras { @extend %gras;}
+.forcer-droite { @extend %forcer-droite; }
+.forcer-gauche { @extend %forcer-gauche; }
+.noir { @extend %noir; }
 
 a {
     text-decoration: none;
