@@ -2,19 +2,7 @@
 [class*='grille'] {
   margin-bottom: 1em;
   .row {
-   [class*='span-'] {
-
-       box-sizing: border-box;
-
-
-       &:first-child {margin-left: 0;}
-
-       & > p {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-      }
-   }
+   
 
    &:before , &:after {
        content: "";
