@@ -22,7 +22,7 @@ $blancEffet :  #f0f0f0;
 
 /** 3. Media Queries */
 
-$break-petit: 480px;
+$break-petit: 350px;
 $break-moyen: 800px;
 $break-large: 1200px;
 
@@ -31,8 +31,8 @@ $mq-tablette: "all and (max-width : " + $break-moyen + ")";
 $mq-desktop: "all and (max-width : " + $break-large + ")";
 
 // Petit bonus
-$mq-iPhone: "only screen and (max-width : 640px)";
-$mq-iPad: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+$mq-iPhone: "only screen and (max-width : 370px)";
+$mq-iPad: "only screen and (min-device-width : 768px) and (max-device-width : 1025px)";
 
 /** 4. Variables autres */
 
