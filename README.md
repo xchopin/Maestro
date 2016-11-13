@@ -1,7 +1,8 @@
 # Maestro Framework
-<p align="center"><img style="margin-bottom:3em;" width="150"src="http://images.all-free-download.com/images/graphicthumb/maestro_logo2_29719.jpg"> 
+<p align="center"><img style="margin-bottom:3em;" width="150"src="http://xavierchop.in/maestro/ressources/icon.jpg"> 
 <br> <br>
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)]()</p> <br>
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)]()  
+   </p>  <br>
 Maestro is a powerful CSS Framework made in France. It is modern, responsive-design and easy to use. Therefore it will be perfect for your web projects.
 
 ## Installation
@@ -48,29 +49,30 @@ maestro/
 │   ├── background.png
 │   ├── css.png
 │   ├── html.png
+│   ├── icon.jpeg
 │   ├── maestro.ttf
-│   ├── sass.png
+│   └── sass.png
 └── sass/
     ├── presets/
-    │   ├──_alerte.scss
-    │   ├──_bouton.scss
-    │   ├──_composant.scss
-    │   ├──_conteneur.scss
-    │   ├──_fonction.scss
-    │   ├──_grille.scss
-    │   ├──_input.scss
-    │   ├──_navbar.scss
-    │   └──_typographie.scss
-    ├──_bouton.scss
-    ├──_composant.scss
-    ├──_demo.scss
-    ├──_grille.scss
-    ├──_input.scss
-    ├──_reset.scss
-    ├──_tableau.scss
-    ├──_typographie.scss
-    ├──_variables.scss
-    └──style.scss
+    │   ├── _alerte.scss
+    │   ├── _bouton.scss
+    │   ├── _composant.scss
+    │   ├── _conteneur.scss
+    │   ├── _fonction.scss
+    │   ├── _grille.scss
+    │   ├── _input.scss
+    │   ├── _navbar.scss
+    │   └── _typographie.scss
+    ├── _bouton.scss
+    ├── _composant.scss
+    ├── _demo.scss
+    ├── _grille.scss
+    ├── _input.scss
+    ├── _reset.scss
+    ├── _tableau.scss
+    ├── _typographie.scss
+    ├── _variables.scss
+    └── style.scss
 ```
 ## License
 
