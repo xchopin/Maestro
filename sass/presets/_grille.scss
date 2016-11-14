@@ -6,7 +6,6 @@
 
 @mixin generateurGrilleFloat($nbColonnes,$largeurGoutiere) {
   /** Variables */
-  $largeurGoutiere : $largeurGoutiere ;
   $marge : ($largeurGoutiere * ($nbColonnes - 1));
   $largeur1 : (100 - $marge) / $nbColonnes;
   $largeur2 : 100% / $nbColonnes;
