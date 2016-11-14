@@ -33,10 +33,7 @@
     from {
         background-position: 0 0;
     }
-
-    to {
-        background-position: 100% 0;
-    };
+    to {  background-position: 100% 0;  }
 }
 
 
@@ -53,15 +50,13 @@
 }
 
 /** Spécifique à la démo */
-.demo {
-    [class*="span-"] {
-        background-color: #EFEBE9;
-        & > p {
+.demo [class*="span-"] {
+    background-color: #EFEBE9;
+}
+.demo [class*="span-"] > p {
             background-color: #D7CCC8;
             padding: 0;
             margin: 0;
             text-align: center;
             color: white;
-        }
-    }
 }

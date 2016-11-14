@@ -65,6 +65,11 @@ h6 > small { font-size: 80%; color: $couleurSousTitre;  }
 .forcer-droite { @extend %forcer-droite; }
 .forcer-gauche { @extend %forcer-gauche; }
 .noir { @extend %noir; }
+.blanc {  @extend %blanc;}
+.rouge {  @extend %rouge; }
+.vert {   @extend %vert; }
+.orange { @extend %orange;  }
+
 
 a {
     text-decoration: none;

@@ -8,7 +8,6 @@
 @import 'grille';
 @import 'image';
 @import 'input';
-@import 'demo';
 
 
 /* - - - - - - -  Maestro, à toi de jouer  - - - - - - - - - */
@@ -21,12 +20,14 @@ body {
 html {
     font-family: $police1,$police2;
     background: #FAFAFA;
+    min-height:100%;
 }
 
 hr {
     margin-top: -0.5em;
     border: 0;
     height: 1px;
+    min-height:100%;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
@@ -133,7 +134,8 @@ footer {
     background-color: darken($grisFlat,20);
     font-family: $police1;
     color:white;
-
+    position: absolute;
+    bottom:0;
 
     @media #{$mq-telephone} {
         padding-left:5%;
