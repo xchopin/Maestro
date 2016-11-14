@@ -83,6 +83,8 @@
     $min : (100 - $min) / $nbColonnes;
     margin-bottom: 1em;
 
+
+
     div.row {
         display: -ms-flexbox;
         display: -moz-flex;
@@ -133,7 +135,11 @@
     }
 
     @media all and (max-width:1000px) {
-       div.span-flex{ min-width: 100% !important ;  margin-left: 0 !important;}
+      overflow:scroll; // Fixation provisoire pour webkit;
+       div.span-flex{
+          min-width: 100% !important ;
+          margin-left: 0 !important;
+       }
        [class*='offset-'] {
         margin-left: 0 !important;
        }
@@ -143,11 +149,10 @@
          div.span-ligne-#{$i} {
             $largeur : 100% / $i;
             min-width: $largeur!important;  margin-left: 0 !important;
-           }
+        }
+
        }
-
     }
-
 }
 
 %encadre {
