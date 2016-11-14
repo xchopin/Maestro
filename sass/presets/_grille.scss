@@ -134,7 +134,7 @@
     }
 
     @media all and (max-width:1000px) {
-      overflow:scroll; // Fixation provisoire pour webkit;
+      overflow:auto; // Fixation provisoire pour webkit;
        div.span-flex{
           min-width: 100% !important ;
           margin-left: 0 !important;
