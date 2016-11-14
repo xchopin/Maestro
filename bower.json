@@ -1,0 +1,19 @@
+{
+  "name": "maestro",
+  "homepage": "https://github.com/xchopin/maestro",
+  "authors": [
+    "xchopin <bonjour@xavierchop.in>"
+  ],
+  "description": "A powerful CSS Framework made in France.",
+  "main": "",
+  "keywords": [
+    "css",
+    "html",
+    "sass",
+    "scss",
+    "france",
+    "french",
+    "framework"
+  ],
+  "license": "MIT"
+}
