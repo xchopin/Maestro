@@ -44,8 +44,8 @@ Within the download you'll find the following directories and files, logically g
 ```
 maestro/
 ├── css/
-├── ├── demo.css
-├── ├── style.css
+│   ├── demo.css
+│   ├── style.css
 │   └── style.min.css
 ├── ressources/
 │   ├── background.png
