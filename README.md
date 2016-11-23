@@ -44,7 +44,9 @@ Within the download you'll find the following directories and files, logically g
 ```
 maestro/
 ├── css/
-│   └── style.css
+├── ├── demo.css
+├── ├── style.css
+│   └── style.min.css
 ├── ressources/
 │   ├── background.png
 │   ├── css.png
@@ -65,7 +67,6 @@ maestro/
     │   └── _typographie.scss
     ├── _bouton.scss
     ├── _composant.scss
-    ├── _demo.scss
     ├── _grille.scss
     ├── _input.scss
     ├── _reset.scss
