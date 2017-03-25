@@ -1,7 +1,7 @@
 # Maestro Framework
 <p align="center"><img style="margin-bottom:3em;" width="150"src="http://xavierchop.in/maestro/ressources/icon.jpg"> 
 <br> <br>
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)]()  
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square" alt="License"></a>
    </p>  <br>
 Maestro is a powerful CSS Framework made in France. It is modern, responsive-design and easy to use. Therefore it will be perfect for your web projects.
 
